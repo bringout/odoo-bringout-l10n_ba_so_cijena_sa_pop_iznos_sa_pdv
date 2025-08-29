@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="sales_report_invoice_code" inherit_id="sale.report_saleorder_document">
+
+            <xpath expr="//table[hasclass('table')]//tr//th[@name='th_taxes']"
+                   position="after">
+                   <th name="th_discount" t-if="display_discount" class="text-end">
+                            <span>Cijena sa pop.</span>
+                    </th>
+                    <th name="th_cijena_sa_pdv" class="text-end">
+                            <span>Cijena sa PDV</span>
+                    </th>
+            </xpath>
+
+            <xpath expr="//table[hasclass('table')]//tr//th[@name='th_subtotal']"
+                   position="after">
+                <th name="th_iznos_sa_pdv" class="text-end">Iznos sa PDV</th>
+            </xpath>
+            
+            <xpath expr="//tbody[hasclass('sale_tbody')]//tr//td[@name='td_name']"
+                   position="replace">
+                   <td name="td_name"><span t-field="line.name_without_ref"/></td>
+            </xpath>
+
+            <!-- hernad: this is hack -->
+            <xpath expr="//tbody[hasclass('sale_tbody')]//tr//td[@name='td_subtotal']"
+                   position="replace">
+                   <td t-if="not line.is_downpayment" name="td_subtotal" class="text-end">
+                        <span t-field="line.price_subtotal"/>
+                   </td>
+                   <td name="td_iznos_sa_pdv" class="text-end">
+                         <span t-field="line.price_total"/>
+                   </td>
+            </xpath>
+
+
+            <xpath expr="//tbody[hasclass('sale_tbody')]//tr//td[@name='td_taxes']"
+                   position="after">
+                   <td t-if="display_discount" class="text-end">
+                       <span t-field="line.price_reduce_taxexcl"/>
+                   </td>
+                   <td name="td_cijena_sa_pdv" class="text-end">
+                       <span t-field="line.price_reduce_taxinc"/>
+                   </td>
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
