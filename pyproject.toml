@@ -1,12 +1,12 @@
 [project]
 name = "odoo-bringout-l10n_ba_so_cijena_sa_pop_iznos_sa_pdv"
-version = "16.0.0"
+version = "16.0.2.0.8"
 description = "Prodajna narudžba (SO), prikaz dodatnih kolona - Cijena sa Popustom, Cijena sa PDV, Iznos sa PDV"
 authors = [
     { name = "Ernad Husremovic", email = "hernad@bring.out.ba" }
 ]
 dependencies = [
-    "odoo-bringout-l10n_bs>=16.0.0",
+    "odoo-bringout-l10n_ba>=16.0.0",
     "odoo-bringout-order_line_sequences>=16.0.0",
     "odoo-bringout-l10n_ba_sifra_in_documents>=16.0.0",
     "requests>=2.25.1"
