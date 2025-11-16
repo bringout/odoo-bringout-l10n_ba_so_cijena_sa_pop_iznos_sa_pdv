@@ -2,6 +2,6 @@
 
 This addon depends on:
 
-- [l10n_bs](https://github.com/bringout/odoo-bringout-l10n_bs/tree/b1897ffad51e5694fb56872f87e760d6c0ab6a4f)
-- [order_line_sequences](https://github.com/bringout/cybrosys/tree/d5ccb3ed29f190710eb6f395d43e9db278746f19/odoo-bringout-cybrosys-order_line_sequences)
-- [l10n_ba_sifra_in_documents](https://github.com/bringout/odoo-bringout-l10n_ba_sifra_in_documents/tree/d4abce736471a051e393fa93d374004ce015d5e2)
+- [l10n_bs](https://github.com/bringout/odoo-bringout-l10n_bs/tree/d6b758233b86d05ac8ad6cd5fb96c3044d9253d8)
+- [order_line_sequences](https://github.com/bringout/cybrosys/tree/d9478f95845f31fd274ea2c512559ec0049cccbb/odoo-bringout-cybrosys-order_line_sequences)
+- [l10n_ba_sifra_in_documents](https://github.com/bringout/odoo-bringout-l10n_ba_sifra_in_documents/tree/0cd5eaba2fbbc9f2bc58a456e85df7d5990f5b9e)
