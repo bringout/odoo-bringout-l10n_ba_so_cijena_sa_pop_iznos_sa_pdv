@@ -16,4 +16,5 @@ Dodatne kolone:
         "views/sale_order_document_view.xml",
     ],
     "installable": True,
+    "license": "AGPL-3",
 }
