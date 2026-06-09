@@ -7,7 +7,7 @@ Dodatne kolone:
 - Cijena sa PDV (sa uračunatim popustom)
 - Iznos sa PDV
 """,
-    "version": "16.0.2.0.8",
+    "version": "19.0.2.0.8",
     "author": "bring.out doo Sarajevo",
     "website": "https://www.bring.out.ba",
     "category": "Localization",
